@@ -8,7 +8,6 @@ export default function SecurityObscurityDemo() {
   const [urlFound, setUrlFound] = useState<string | null>(null)
   const [accessed, setAccessed] = useState(false)
 
-`
 
   const searchBundle = () => {
     setBundleSearched(true)
