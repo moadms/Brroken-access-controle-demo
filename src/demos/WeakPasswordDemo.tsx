@@ -6,7 +6,6 @@ const WEAK_PASSWORDS = ['admin', 'password', '123456', 'admin123', 'default', 'r
 
 export default function WeakPasswordDemo() {
   const [tab, setTab] = useState<Tab>('attack')
-  const [username, setUsername] = useState('admin')
   const [password, setPassword] = useState('')
   const [attempting, setAttempting] = useState(false)
   const [tries, setTries] = useState<{ pwd: string; ok: boolean }[]>([])

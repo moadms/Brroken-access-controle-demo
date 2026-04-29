@@ -8,11 +8,6 @@ export default function SecurityObscurityDemo() {
   const [urlFound, setUrlFound] = useState<string | null>(null)
   const [accessed, setAccessed] = useState(false)
 
-  // Simulate finding secret admin URL in JS bundle
-  const FAKE_JS_BUNDLE = `
-// main.bundle.js (minified)
-...function initRoutes(){const ADMIN='/secret_xk9z_panel';
-fetch(ADMIN+'/health');routes.push({path:ADMIN,component:AdminPanel})...
 `
 
   const searchBundle = () => {
